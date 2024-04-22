@@ -1,0 +1,61 @@
+/* App.css */
+
+.container {
+  text-align: center;
+  background-color: #f0f0f0;
+  /* Mild background color */
+  font-family: serif;
+  /* Use serif font */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #333;
+}
+
+.move-container {
+  margin-bottom: 10px;
+}
+
+.move-label {
+  font-weight: bold;
+  /* Make Move 1 to Move 9 bold */
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.move-select {
+  width: 120px;
+}
+
+.predict-button {
+  background-color: #007bff;
+  /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.predict-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.prediction-container {
+  margin-top: 20px;
+}
+
+.prediction-title {
+  color: #333;
+}
+
+.prediction-text {
+  font-style: italic;
+}

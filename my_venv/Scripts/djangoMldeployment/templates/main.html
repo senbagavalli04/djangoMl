@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tic Tac Toe Application </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Additional styling for result message */
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'C:\Users\D E L L\OneDrive\Desktop\django\my_venv\Scripts\djangoMldeployment\static\main.css' %}">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe Prediction</h1>
+        <hr>
+        {% if result %}
+        <h2>In the Tic Tac Toe game: {{ result }}</h2>
+        {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="move1">Move 1:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 2:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 3:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 4:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 5:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 6:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 7:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 8:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <label for="move1">Move 9:</label>
+            <select id="move1" name="move1">
+                <option value="X">X</option>
+                <option value="O">O</option>
+                <option value="Empty">Empty</option>
+            </select><br>
+            <!-- Repeat for move2 to move9 -->
+
+            <input type="submit" value="Submit Moves">
+        </form>
+    </div>
+</body>
+
+</html>

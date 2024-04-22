@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  /* Mild background color */
+  display: flex;
+  justify-content: center;
+  /* Align container horizontally */
+  align-items: center;
+  /* Align container vertically */
+  height: 100vh;
+  /* Full height of viewport */
+}
+
+.container {
+  width: 90%;
+  /* Adjust width as needed */
+  padding: 20px;
+  background-color: #fff;
+  /* White background for container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Nice box shadow */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  /* Button outline */
+  border-radius: 5px;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  /* Button background color on hover */
+  color: #fff;
+  /* Text color on hover */
+}
